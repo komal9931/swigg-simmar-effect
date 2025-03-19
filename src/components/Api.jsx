@@ -22,6 +22,11 @@ const Api = () => {
       });
   }, []);
 
+
+  if(restaurants.length===0){
+    return <h1>Loading....</h1>
+  }
+
   if (loading) {
     return (
       <div className="shimmer-container">
